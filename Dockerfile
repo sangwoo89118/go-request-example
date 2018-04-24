@@ -2,9 +2,9 @@
 FROM golang
 
 # copy the local project code into a directory in the container’s GOPATH
-COPY ./ /go/src/github.com/[your-github-account]/go-request-example/
+COPY ./ /go/src/github.com/sangwoo89118/go-request-example/
 # set this to the working directory so all subsequent commands will run from this directory
-WORKDIR /go/src/github.com/[your-github-account]/go-request-example/
+WORKDIR /go/src/github.com/sangwoo89118/go-request-example/
 
 #  install all dependencies
 RUN go get ./
